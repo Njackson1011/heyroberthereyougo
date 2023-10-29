@@ -1,0 +1,14 @@
+{
+  "name": "enzyme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Nicholas Jackson https://github.com/Njackson1011",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^27.0.0"
+  }
+}

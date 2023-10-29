@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Files</title>
+    <link rel="stylesheet" href="../public/styles.css">
+</head>
+<body>
+    <div class="search-container">
+        <div class="search-header">
+            <h2>Search file, error, or keyword:</h2>
+            <input type="text" id="search-input">
+        </div>
+        <div class="directory-section">
+            <h3>Where is your active working directory?</h3>
+            <div class="checkbox-row">
+                <label><input type="checkbox" id="my-pc"> My PC</label>
+                <label><input type="checkbox" id="c-drive"> C</label>
+                <label><input type="checkbox" id="d-drive"> D</label>
+                <label><input type="checkbox" id="e-drive"> E</label>
+                <label><input type="checkbox" id="f-drive"> F</label>
+            </div>
+            <div class="checkbox-row">
+                <label><input type="checkbox" id="crs"> CRS</label>
+                <label><input type="checkbox" id="gibbs"> GIBBS</label>
+                <label><input type="checkbox" id="tai"> TAI</label>
+                <label><input type="checkbox" id="dcs"> DCS</label>
+            </div>
+        </div>
+        <div class="button-row">
+            <button id="search">Search</button>
+            <button id="cancel" onclick="goBack()">Cancel</button>
+        </div>
+        <div class="output-box">
+            <h3>Found Results:</h3>
+            <ul id="output-list"></ul>
+        </div>
+    </div>
+
+    <script src="../renderer.js"></script>
+</body>
+</html>
